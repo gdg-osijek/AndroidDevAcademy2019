@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/marginLarge"
+        android:paddingEnd="@dimen/marginLarge"
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/newTaskHeading"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/HeadingTextView"
+            android:layout_marginBottom="@dimen/marginLarge"
+            android:text="@string/newTaskHeadingText"/>
+    <EditText
+            android:id="@+id/newTaskTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newTaskTitleInputHint"
+            android:layout_marginBottom="@dimen/marginLarge"
+            android:inputType="text"
+            tools:ignore="Autofill"/>
+    <EditText
+            android:id="@+id/newTaskDescriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newTaskDescriptionInputHint"
+            android:layout_marginBottom="@dimen/marginLarge"
+            android:inputType="text"
+            tools:ignore="Autofill"/>
+    <Spinner
+            android:id="@+id/prioritySelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/priorities"
+            android:layout_marginTop="@dimen/marginLarge"/>
+    <Button
+            android:id="@+id/saveTaskAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLarge"
+            android:layout_marginBottom="@dimen/marginLarge"
+            android:layout_gravity="center"
+            android:text="@string/saveTaskActionText"/>
+
+</LinearLayout>

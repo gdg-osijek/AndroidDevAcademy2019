@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Best Pizzas</string>
+    <string name="add_pizza">ADD PIZZA</string>
+    <string name="type">Type</string>
+    <string name="place">Place</string>
+    <string name="price">Price</string>
+    <string name="grade">Grade:</string>
+    <string name="save">SAVE</string>
+    <string name="empty_field_error">Cannot be empty!</string>
+    <string name="pizzaPrice">%skn</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="change_app_theme">Change app theme</string>
+    <string name="clear_all_pizzas">Clear all pizzas</string>
+    <string name="clear_all_pizzas_title">Clear All Pizzas?</string>
+    <string name="cool_theme_1">Cool theme 1</string>
+    <string name="cool_theme_2">Cool theme 2</string>
+    <string name="defaultRadioOption">Default</string>
+</resources>

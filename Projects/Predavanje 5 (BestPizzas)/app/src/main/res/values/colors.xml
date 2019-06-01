@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Default theme
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    //Cool theme 1
+    <color name="themeOneColorPrimary">#9E9E9E</color>
+    <color name="themeOneColorPrimaryDark">#616161</color>
+    <color name="themeOneColorAccent">#448AFF</color>
+
+
+    //Cool theme 2
+    <color name="themeTwoColorPrimary">#9C27B0</color>
+    <color name="themeTwoColorPrimaryDark">#9C27B0</color>
+    <color name="themeTwoColorAccent">#FF4081</color>
+
+    
+    <color name="white">#FFFFFF</color>
+    <color name="textColorDark">#212121</color>
+    <color name="dividerColor">#bdbdbd</color>
+    <color name="starColor">#FFC82B</color>
+
+</resources>

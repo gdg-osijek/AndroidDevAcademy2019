@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorHigh">#ff4d4d</color>
+    <color name="colorMedium">#ffcc00</color>
+    <color name="colorLow">#1aff8c</color>
+
+    <color name="input_hint">#5e6266</color>
+    <color name="hint_gray">#5e6266</color>
+    <color name="input_background">#3b4148</color>
+    <color name="background_color">#2e3237</color>
+    <color name="toolbar_color">#2b2d2e</color>
+    <color name="main_green">#26ae90</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#222222</color>
+    <color name="like_red">#cb2027</color>
+</resources>

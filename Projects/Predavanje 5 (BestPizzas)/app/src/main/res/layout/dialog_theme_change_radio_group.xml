@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingBottom="@dimen/radioGroupPadding"
+              android:paddingTop="@dimen/radioGroupPadding"
+              android:orientation="vertical">
+
+    <RadioGroup
+            android:id="@+id/themeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+        <RadioButton
+                android:id="@+id/themeDefaultRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/radioBtnMargin"
+                android:text="@string/defaultRadioOption"
+                android:checked="true"/>
+
+        <RadioButton
+                android:id="@+id/themeOneRadioBtn"
+                android:layout_width="wrap_content"
+                android:text="@string/cool_theme_1"
+                android:layout_margin="@dimen/radioBtnMargin"
+                android:layout_height="wrap_content"/>
+
+        <RadioButton
+                android:id="@+id/themeTwoRadioBtn"
+                android:layout_width="wrap_content"
+                android:text="@string/cool_theme_2"
+                android:layout_margin="@dimen/radioBtnMargin"
+                android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+</LinearLayout>

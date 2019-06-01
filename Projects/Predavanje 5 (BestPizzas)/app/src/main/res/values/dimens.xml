@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeHeading">26sp</dimen>
+    <dimen name="textSizeGrade">20sp</dimen>
+    <dimen name="radioBtnMargin">12dp</dimen>
+    <dimen name="radioGroupPadding">14dp</dimen>
+</resources>
