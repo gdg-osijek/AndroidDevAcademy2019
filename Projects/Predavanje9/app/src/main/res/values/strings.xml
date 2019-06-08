@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">Koin Example</string>
+  <string name="email_input_hint">Email</string>
+  <string name="password_input_hint">Password</string>
+  <string name="login_button_text">Login</string>
+  <string name="no_account_text">Don\'t have an accout?</string>
+  <string name="register_label">Register</string>
+  <string name="name_hint">Name</string>
+  <string name="already_registered">Already have an account?</string>
+</resources>
