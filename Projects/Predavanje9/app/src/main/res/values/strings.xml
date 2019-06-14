@@ -7,4 +7,5 @@
   <string name="register_label">Register</string>
   <string name="name_hint">Name</string>
   <string name="already_registered">Already have an account?</string>
+    <string name="feed_placeholder_text">Feed placeholder text</string>
 </resources>

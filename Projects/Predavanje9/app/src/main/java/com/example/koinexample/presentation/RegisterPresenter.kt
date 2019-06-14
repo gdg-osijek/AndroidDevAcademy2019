@@ -9,25 +9,32 @@ import com.example.koinexample.domain.registration.RegisterUseCase
 import com.example.koinexample.ui.auth.register.RegisterContract
 
 class RegisterPresenter(private val registerUseCase: RegisterUseCase) : RegisterContract.Presenter {
-  private lateinit var view: RegisterContract.View
-  private var isFormValid = true
-  
-  override fun setView(view: RegisterContract.View) {
-    this.view = view
-  }
-  
-  override fun validateInput(name: String, email: String, password: String) {
-    if (!name.isValidName()) isFormValid = false
-    if (!email.isValidEmail()) isFormValid = false
-    if (!password.isValidPassword()) isFormValid = false
-    if (isFormValid) {
-      registerUseCase.execute(RegisterRequestBody(name, email, password), ::onRegisterSuccess, ::onRegisterFailure)
-    } else {
-      view.showError("Invalid input data")
+    private lateinit var view: RegisterContract.View
+    private var isFormValid = true
+
+    override fun setView(view: RegisterContract.View) {
+        this.view = view
     }
-  }
-  
-  private fun onRegisterSuccess(response: RegisterResponse) = view.goToLogin()
-  
-  private fun onRegisterFailure(error: Throwable) = view.showError(error.localizedMessage)
+
+    override fun validateInput(name: String, email: String, password: String) {
+        if (!name.isValidName()) isFormValid = false
+        if (!email.isValidEmail()) isFormValid = false
+        if (!password.isValidPassword()) isFormValid = false
+
+        if (isFormValid) {
+            registerUseCase.execute(
+                RegisterRequestBody(name, email, password),
+                ::onRegisterSuccess,
+                ::onRegisterFailure
+            )
+        } else {
+            view.showError("Invalid input data")
+        }
+
+        isFormValid = true
+    }
+
+    private fun onRegisterSuccess(response: RegisterResponse) = view.goToLogin()
+
+    private fun onRegisterFailure(error: Throwable) = view.showError(error.localizedMessage)
 }
